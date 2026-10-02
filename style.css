@@ -1,0 +1,79 @@
+:root{color-scheme:dark;--bg:#121d35;--ink:#f5f4f0;--muted:#a6b3ca;--yellow:#f9c75c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}button{font:inherit;cursor:pointer;touch-action:manipulation;color:inherit;border:0}button:focus-visible{outline:3px solid #fff;outline-offset:4px}button:disabled{opacity:.35;cursor:default}main{max-width:990px;margin:auto;padding:26px 32px 20px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #344159;padding-bottom:18px;font-size:14px}.edition{letter-spacing:2px;font-weight:700}.dedication{color:var(--muted)}.intro{display:flex;justify-content:space-between;align-items:center;padding:24px 0}h1{font-family:Georgia,serif;font-weight:normal;line-height:1.03;font-size:clamp(32px,4.6vw,50px);margin:0}h1 span{color:var(--yellow)}.intro p{color:var(--muted);font-size:16px;margin:13px 0 0}.number{font:italic 100px Georgia;color:#2e3e59;letter-spacing:-8px;padding-right:12px}.layout{display:grid;grid-template-columns:minmax(280px,390px) 1fr;gap:54px;align-items:start}.game{border:1px solid #40516e;border-radius:16px;overflow:hidden;background:#0c1528;box-shadow:0 18px 60px #070c1840}.game-top{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;border-bottom:1px solid #344159;font-size:14px;gap:8px}.game-top button{width:34px;height:30px;background:#263750;border-radius:6px;font-weight:bold}.canvas-wrap{position:relative}canvas{width:100%;display:block;aspect-ratio:360/540;object-fit:contain} .overlay{position:absolute;inset:0;display:grid;place-items:center;background:#0c1528cf;backdrop-filter:blur(5px);padding:18px}.overlay[hidden]{display:none}.overlay-card{text-align:center;max-width:290px}.small{font-size:12px;font-weight:700;letter-spacing:1.8px;color:var(--muted)}h2{font:normal 34px/1.1 Georgia;margin:16px 0} .overlay p{font-size:16px;line-height:1.5;color:#d0d9e9;margin:0 0 22px}.primary{background:var(--yellow);color:#18233a;font-weight:700;border-radius:9px;padding:15px 20px;min-height:48px}.controls{display:grid;grid-template-columns:1fr 1fr 1fr 2.2fr;gap:7px;padding:11px;background:#18263e}.controls button{background:#30425e;border-radius:8px;min-height:46px;font-size:25px}.controls .drop{background:#f9c75c;color:#142039;font-size:15px;font-weight:bold}.controls button:active{transform:translateY(2px)}aside{padding-top:8px}.progress-head{display:flex;justify-content:space-between;align-items:end;font-size:17px}.progress-head strong{font:42px Georgia;color:var(--yellow)}.progress{height:6px;background:#30405b;border-radius:9px;margin-top:12px;overflow:hidden}.progress i{display:block;width:0;height:100%;background:var(--yellow);transition:width .4s}.rows{font-size:14px;color:var(--muted);margin:10px 0 24px}.next{border:1px solid #40516e;border-radius:13px;padding:20px;min-height:155px}#next-name{font:26px Georgia;color:var(--yellow);margin:10px 0 14px}#next-shape{display:flex;gap:4px}#next-shape i{width:25px;height:25px;border-radius:4px;background:var(--yellow);box-shadow:inset 0 2px #ffffff60}.materials{margin-top:26px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.chips span{font-size:14px;padding:8px 11px;border-radius:5px;color:#111d33;background:#f783ab}.chips span:nth-child(2){background:#f9c75c}.chips span:nth-child(3){background:#b8a0f7}.chips span:nth-child(4){background:#6ecfb0}.chips span:nth-child(5){background:#f6a36a}.chips span:nth-child(6){background:#7ebafb}.instructions{font-size:16px;line-height:1.55;color:#c2cce0;margin:23px 0 12px}.text-button{background:none;padding:10px 0;color:var(--yellow);font-size:15px}.keyboard{color:#899ab7;font-size:13px;line-height:1.65}footer{text-align:center;color:#899ab7;font-size:13px;padding-top:24px;line-height:1.5}@media(max-width:650px){main{padding:16px 15px}header{font-size:12px;padding-bottom:13px}.edition{letter-spacing:1px}.intro{padding:19px 0 18px}.intro p{font-size:14px;max-width:260px;line-height:1.4;margin-top:8px}.number{display:none}.layout{display:flex;flex-direction:column;gap:18px}.game{width:min(100%,390px);margin:auto}.game-top{padding:6px 11px}canvas{min-height:285px}.overlay p{font-size:14px;line-height:1.4;margin-bottom:14px}h2{font-size:29px;margin:10px 0}.overlay .small{font-size:12px}.primary{padding:12px 15px}aside{width:min(100%,390px);margin:auto;padding:0}.progress-head{font-size:15px}.progress-head strong{font-size:29px}.rows{margin-bottom:15px}.next{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;min-height:0;padding:13px 15px}.next .small{width:100%;font-size:12px}#next-name{margin:0;font-size:22px}#next-shape i{width:20px;height:20px}.materials{margin-top:18px}.instructions{font-size:14px;margin:15px 0 4px}.keyboard{display:none}footer{padding:18px 0 5px}.controls{padding:8px}.controls button{min-height:44px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.game.is-won .overlay{position:static;background:#18263e;backdrop-filter:none;padding:24px 20px 28px;border-top:1px solid #40516e}.game.is-won .overlay-card{max-width:340px}.game.is-won .controls{display:none}.game.is-won canvas{max-height:none}.game.is-won .overlay .small{display:none}
+
+[hidden]{display:none!important}.welcome{padding:28px 32px 30px;border:1px solid #40516e;border-radius:16px;background:#18263e}.welcome-lead{max-width:620px}.welcome h2{margin:12px 0 14px}.welcome p{font-size:16px;line-height:1.55;color:#c2cce0;margin:12px 0}.welcome-details{display:grid;grid-template-columns:1fr 1.25fr;gap:34px;margin:24px 0}.welcome h3{font-size:18px;font-weight:600;margin:0 0 14px}.welcome .materials{margin:0}.welcome .chips{gap:9px}.welcome ol{margin:0;padding-left:22px;color:#d2dbeb;font-size:16px;line-height:1.55}.welcome li{padding-left:5px;margin-bottom:10px}.welcome .keyboard{font-size:14px;margin:0 0 20px}.welcome .primary{min-width:190px}.has-started .intro{padding:18px 0}.has-started h1{font-size:30px}.has-started h1 br{display:none}.has-started .intro p,.has-started .number{display:none}#play-screen{scroll-margin-top:12px}canvas:focus-visible{outline:2px solid var(--yellow);outline-offset:-2px}@media(max-width:650px){.welcome{padding:23px 20px}.welcome h2{font-size:29px}.welcome-details{display:block;margin:24px 0}.welcome .materials{margin-bottom:27px}.welcome .primary{width:100%}.welcome .keyboard{display:block;font-size:13px}.welcome p,.welcome ol{font-size:15px}.has-started h1{font-size:25px}.has-started .intro{padding:14px 0}}
+
+/* A stable, single-screen phone layout. Keep browser zoom available. */
+@media(max-width:650px), (pointer:coarse) and (max-height:650px){
+ html{height:100%;overflow:hidden;overscroll-behavior:none}
+ body{position:fixed;inset:0;height:100vh;height:100svh;overflow:hidden;overscroll-behavior:none}
+ main{width:100%;height:100%;max-width:650px;display:flex;flex-direction:column;min-height:0;padding:max(8px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));gap:8px}
+ header{flex:none;font-size:12px;min-height:25px;padding:0 0 6px;gap:8px}
+ .edition{letter-spacing:.6px}.dedication{white-space:nowrap}
+ .intro,.has-started .intro{flex:none;padding:3px 0 5px}
+ h1,.has-started h1{font-size:25px;line-height:1.05}
+ h1 br{display:none}.intro p,.number,footer{display:none}
+ .welcome{flex:1;min-height:0;display:flex;flex-direction:column;padding:16px;overflow-y:auto;overscroll-behavior:contain;border-radius:12px}
+ .welcome-lead .small,.welcome-lead p,.welcome .materials p,.welcome .keyboard{display:none}
+ .welcome h2{font-size:26px;margin:0 0 16px}
+ .welcome-details{display:flex;flex-direction:column;gap:17px;margin:0 0 14px}
+ .welcome h3{font-size:16px;margin:0 0 8px}
+ .welcome .materials{margin:0}.welcome .chips{gap:6px;margin:0}
+ .welcome .chips span{font-size:14px;padding:7px 9px}
+ .welcome ol{font-size:14px;line-height:1.4;padding-left:20px}
+ .welcome li{margin-bottom:7px;padding-left:2px}
+ .welcome .how-to p{font-size:14px;line-height:1.35;margin:8px 0 0}
+ .welcome .primary{flex:none;width:100%;min-height:46px;padding:12px;margin-top:auto}
+ #play-screen{flex:1;min-height:0;display:flex;flex-direction:column;gap:7px;scroll-margin:0}
+ #play-screen aside{order:-1;flex:none;width:100%;max-width:430px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'head next' 'bar next' 'rows undo';grid-template-rows:26px 5px 40px;column-gap:12px;row-gap:3px;margin:0 auto;padding:0}
+ .progress-head{grid-area:head;align-items:center;font-size:14px;gap:5px}.progress-head strong{font-size:23px}
+ .progress{grid-area:bar;height:5px;margin:0}.rows{grid-area:rows;align-self:center;margin:0;font-size:13px}
+ .next{grid-area:next;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1px 6px;border:0;border-left:1px solid #40516e;border-radius:0;padding:0 0 0 12px;min-height:0}
+ .next .small{grid-column:1/-1;font-size:12px;letter-spacing:.5px;line-height:1.1;width:auto}
+ #next-name{font:16px/1.1 Georgia;margin:0;white-space:nowrap}#next-shape{gap:2px;align-self:center}#next-shape i{width:10px;height:10px;border-radius:2px}
+ #undo{grid-area:undo;padding:0;min-height:40px;text-align:left;font-size:14px}
+ .game{width:100%;max-width:430px;margin:0 auto;min-height:0;flex:1;display:flex;flex-direction:column;border-radius:12px}
+ .game-top{flex:none;padding:5px 9px;min-height:44px;font-size:14px;gap:5px}
+ .game-top button{flex:none;width:44px;height:34px}
+ .canvas-wrap{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;align-items:stretch}
+ canvas,.game.is-won canvas{position:absolute;inset:0;width:100%;height:100%;min-height:0;max-height:none;aspect-ratio:auto;object-fit:contain;touch-action:pinch-zoom}
+ .controls{flex:none;min-height:58px;padding:7px;gap:6px}
+ .controls button{min-height:44px;font-size:25px}.controls .drop{font-size:14px}.controls button:active{transform:none;background:#465e80}.controls .drop:active{background:#ffe09a}
+ .overlay{padding:12px;overflow:auto;overscroll-behavior:contain}.overlay h2{font-size:25px}.overlay p{font-size:14px;line-height:1.4}
+ .game.is-won .canvas-wrap{display:grid;grid-template-rows:minmax(0,1fr) auto}
+ .game.is-won canvas{position:static;min-height:0;grid-row:1}
+ .game.is-won .overlay{grid-row:2;position:static;padding:12px 16px;max-height:none;overflow:auto}
+ .game.is-won .overlay-card{max-width:none}.game.is-won h2{font-size:23px;margin:0 0 8px}.game.is-won .overlay p{font-size:14px;line-height:1.35;margin:0 0 10px}.game.is-won .primary{min-height:44px;padding:10px 15px}
+}
+@media(max-width:650px) and (max-height:650px){
+ main{gap:5px}h1,.has-started h1{font-size:22px}.welcome{padding:12px}.welcome h2{font-size:23px;margin-bottom:11px}.welcome-details{gap:12px;margin-bottom:10px}.welcome li{margin-bottom:5px}.welcome .chips span{padding:5px 8px}
+ .game.is-won .overlay{padding:9px 12px}.game.is-won h2{font-size:21px}.game.is-won .overlay p{font-size:14px;line-height:1.25}
+}
+@media(pointer:coarse) and (orientation:landscape) and (max-height:650px){
+ main{max-width:100%;gap:4px}header,.has-started .intro{display:none}.intro{padding:0}h1{font-size:22px}
+ #play-screen{flex-direction:row;gap:12px}#play-screen aside{width:210px;flex:none;align-content:center}.game{max-width:none;width:auto;margin:0;flex:1}.game-top{min-height:36px;padding:1px 8px}.controls{min-height:50px;padding:3px 7px}
+ .welcome{padding:10px 16px}.welcome h2{font-size:23px;margin-bottom:8px}.welcome-details{display:grid;grid-template-columns:1fr 1.3fr;gap:20px;margin-bottom:8px}.welcome .primary{align-self:center;width:220px;min-height:44px;padding:10px}.welcome li{margin-bottom:4px}
+ .game.is-won .canvas-wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);grid-template-rows:minmax(0,1fr)}.game.is-won canvas{grid-column:1;grid-row:1}.game.is-won .overlay{grid-column:2;grid-row:1;padding:8px;max-height:100%}.game.is-won h2{font-size:20px}.game.is-won .overlay p{font-size:14px;line-height:1.25}
+}
+
+@media(max-width:380px){#next-shape{display:none}.next{grid-template-columns:minmax(0,1fr)}}
+
+/* Final step: a completed house behind a separate wish dialog. */
+.has-won #play-screen{grid-template-columns:minmax(0,1fr)}
+.has-won #play-screen aside{display:none}
+.has-won .game{width:100%;max-width:430px;margin:0 auto}
+.game.is-won .canvas-wrap{display:block}
+#wish-dialog{width:min(390px,calc(100% - 32px));max-height:calc(100vh - 32px);max-height:calc(100svh - 32px);margin:auto;padding:0;border:1px solid #67718c;border-radius:20px;background:#18263ef5;color:var(--ink);box-shadow:0 22px 80px #0008;overflow:auto;overscroll-behavior:contain}
+#wish-dialog::backdrop{background:#0c152865}
+.wish-card{padding:30px 25px 18px;text-align:center}
+.wish-card .small{color:var(--yellow)}
+.wish-card h2{font:normal 32px/1.12 Georgia;margin:16px 0}
+.wish-card p{font-size:16px;line-height:1.55;color:#d4ddef;margin:0 0 23px}
+.wish-card .primary{width:100%;min-height:46px}
+.wish-card .text-button{display:block;width:100%;min-height:44px;margin-top:6px}
+@media(max-width:650px), (pointer:coarse) and (max-height:650px){
+ .game.is-won canvas{position:absolute;inset:0;width:100%;height:100%;min-height:0;object-fit:contain}
+ .wish-card{padding:25px 22px 13px}.wish-card h2{font-size:29px}.wish-card p{font-size:16px;line-height:1.45}
+}
+@media(max-height:500px){.wish-card{padding:14px 20px 8px}.wish-card h2{font-size:24px;margin:8px 0}.wish-card p{font-size:14px;line-height:1.35;margin-bottom:12px}.wish-card .text-button{margin-top:0}}
